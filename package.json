@@ -1,0 +1,15 @@
+{
+  "name": "cardify",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Cardify — drop-in alternative product card designs for any storefront. Standalone test app (backend + SDK + admin).",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "dev:backend": "pnpm --filter @cardify/backend dev",
+    "dev:admin": "pnpm --filter @cardify/admin dev",
+    "build:sdk": "pnpm --filter @cardify/sdk build",
+    "dev:sdk": "pnpm --filter @cardify/sdk dev",
+    "test": "pnpm -r test",
+    "typecheck": "pnpm -r typecheck"
+  }
+}

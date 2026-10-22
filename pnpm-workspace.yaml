@@ -1,0 +1,10 @@
+packages:
+  - shared
+  - backend
+  - sdk
+  - admin
+
+# esbuild's postinstall picks the right platform binary; pnpm blocks build
+# scripts by default, so it has to be allow-listed.
+allowBuilds:
+  esbuild: true
